@@ -52,7 +52,6 @@
 			children = (
 				299B8AE91F74EF6E0015849D /* NoteListViewController.swift */,
 				299B8AEB1F74EF790015849D /* NewNoteViewController.swift */,
-				2929824F1F751378005231F6 /* MyViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +99,7 @@
 			children = (
 				292982561F7528A7005231F6 /* Helper.swift */,
 				292982511F751628005231F6 /* AlertMessage.swift */,
+				2929824F1F751378005231F6 /* MyViewController.swift */,
 				293CD5EC1F74E8F3001E91B7 /* Main.storyboard */,
 				292982531F7516DF005231F6 /* Controllers */,
 				292982541F7516ED005231F6 /* Cells */,

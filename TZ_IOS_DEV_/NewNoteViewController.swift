@@ -38,7 +38,7 @@ class NewNoteViewController: MyViewController, UITextFieldDelegate {
         let context = delegate.persistentContainer.viewContext
         
         if titleTextField.text != "" && descriptionTextField.text != "" {
-            DataModel.instance.addMyData(delegate: delegate,
+            Helper.instance.addMyData(delegate: delegate,
                                          context: context,
                                          title: titleTextField.text!,
                                          desc: descriptionTextField.text!)
