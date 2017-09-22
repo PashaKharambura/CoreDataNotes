@@ -17,9 +17,10 @@ class NewNoteViewController: MyViewController, UITextFieldDelegate {
             saveButton.layer.cornerRadius = 12
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleTextField.becomeFirstResponder()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -32,17 +33,15 @@ class NewNoteViewController: MyViewController, UITextFieldDelegate {
     }
     
     @IBAction func addNote(_ sender: Any) {
+       
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
         
         if titleTextField.text != "" && descriptionTextField.text != "" {
-            let delegate = UIApplication.shared.delegate as! AppDelegate
-            let context = delegate.persistentContainer.viewContext
-            
-            let note = MyNote(context: context)
-            note.title = titleTextField.text
-            note.desc = descriptionTextField.text 
-            
-            delegate.saveContext()
-            
+            DataModel.instance.addMyData(delegate: delegate,
+                                         context: context,
+                                         title: titleTextField.text!,
+                                         desc: descriptionTextField.text!)
             navigationController?.popViewController(animated: true)
         } else {
             AlertDialog.showAlert("Помилка", message: "Заповніть будь ласка усі поля", viewController: self)
