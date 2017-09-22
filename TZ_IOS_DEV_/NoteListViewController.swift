@@ -63,7 +63,7 @@ class NoteListViewController: MyViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UIView.animate(withDuration: 0.5) {
-            self.blurView.alpha = 0.75
+            self.blurView.alpha = 0.85
             self.blurLabelTitle.text = Helper.instance.notesCD[indexPath.row].title
             self.blurTextDescript.text = Helper.instance.notesCD[indexPath.row].desc
         }

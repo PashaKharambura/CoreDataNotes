@@ -166,7 +166,7 @@
                                         <constraint firstItem="b2H-6u-kbg" firstAttribute="centerY" secondItem="LG7-mb-00f" secondAttribute="centerY" id="yE0-5n-4tz"/>
                                     </constraints>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
