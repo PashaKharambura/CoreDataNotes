@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292982501F751378005231F6 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2929824F1F751378005231F6 /* MyViewController.swift */; };
+		292982521F751628005231F6 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292982511F751628005231F6 /* AlertMessage.swift */; };
 		293CD5E91F74E8F3001E91B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CD5E81F74E8F3001E91B7 /* AppDelegate.swift */; };
-		293CD5EB1F74E8F3001E91B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293CD5EA1F74E8F3001E91B7 /* ViewController.swift */; };
 		293CD5EE1F74E8F3001E91B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293CD5EC1F74E8F3001E91B7 /* Main.storyboard */; };
 		293CD5F11F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 293CD5EF1F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodeld */; };
 		293CD5F31F74E8F3001E91B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293CD5F21F74E8F3001E91B7 /* Assets.xcassets */; };
 		293CD5F61F74E8F3001E91B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293CD5F41F74E8F3001E91B7 /* LaunchScreen.storyboard */; };
+		299B8AEA1F74EF6E0015849D /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B8AE91F74EF6E0015849D /* NoteListViewController.swift */; };
+		299B8AEC1F74EF790015849D /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B8AEB1F74EF790015849D /* NewNoteViewController.swift */; };
+		299B8AEE1F74F0150015849D /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B8AED1F74F0150015849D /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2929824F1F751378005231F6 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		292982511F751628005231F6 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		293CD5E51F74E8F3001E91B7 /* TZ_IOS_DEV_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZ_IOS_DEV_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293CD5E81F74E8F3001E91B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		293CD5EA1F74E8F3001E91B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		293CD5ED1F74E8F3001E91B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		293CD5F01F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TZ_IOS_DEV_.xcdatamodel; sourceTree = "<group>"; };
 		293CD5F21F74E8F3001E91B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293CD5F51F74E8F3001E91B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293CD5F71F74E8F3001E91B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299B8AE91F74EF6E0015849D /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		299B8AEB1F74EF790015849D /* NewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		299B8AED1F74F0150015849D /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292982531F7516DF005231F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				299B8AE91F74EF6E0015849D /* NoteListViewController.swift */,
+				299B8AEB1F74EF790015849D /* NewNoteViewController.swift */,
+				2929824F1F751378005231F6 /* MyViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		292982541F7516ED005231F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				299B8AED1F74F0150015849D /* NoteTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		292982551F7516FE005231F6 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				293CD5E81F74E8F3001E91B7 /* AppDelegate.swift */,
+				293CD5EF1F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodeld */,
+				293CD5F71F74E8F3001E91B7 /* Info.plist */,
+				293CD5F41F74E8F3001E91B7 /* LaunchScreen.storyboard */,
+				293CD5F21F74E8F3001E91B7 /* Assets.xcassets */,
+			);
+			name = "Supporting files";
+			path = TZ_IOS_DEV_;
+			sourceTree = "<group>";
+		};
 		293CD5DC1F74E8F3001E91B7 = {
 			isa = PBXGroup;
 			children = (
 				293CD5E71F74E8F3001E91B7 /* TZ_IOS_DEV_ */,
+				292982551F7516FE005231F6 /* Supporting files */,
 				293CD5E61F74E8F3001E91B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,13 +96,10 @@
 		293CD5E71F74E8F3001E91B7 /* TZ_IOS_DEV_ */ = {
 			isa = PBXGroup;
 			children = (
-				293CD5E81F74E8F3001E91B7 /* AppDelegate.swift */,
-				293CD5EA1F74E8F3001E91B7 /* ViewController.swift */,
+				292982531F7516DF005231F6 /* Controllers */,
+				292982541F7516ED005231F6 /* Cells */,
+				292982511F751628005231F6 /* AlertMessage.swift */,
 				293CD5EC1F74E8F3001E91B7 /* Main.storyboard */,
-				293CD5F21F74E8F3001E91B7 /* Assets.xcassets */,
-				293CD5F41F74E8F3001E91B7 /* LaunchScreen.storyboard */,
-				293CD5F71F74E8F3001E91B7 /* Info.plist */,
-				293CD5EF1F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodeld */,
 			);
 			path = TZ_IOS_DEV_;
 			sourceTree = "<group>";
@@ -99,6 +136,7 @@
 				TargetAttributes = {
 					293CD5E41F74E8F3001E91B7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ZBZB7WTZS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				293CD5F11F74E8F3001E91B7 /* TZ_IOS_DEV_.xcdatamodeld in Sources */,
-				293CD5EB1F74E8F3001E91B7 /* ViewController.swift in Sources */,
+				299B8AEC1F74EF790015849D /* NewNoteViewController.swift in Sources */,
 				293CD5E91F74E8F3001E91B7 /* AppDelegate.swift in Sources */,
+				299B8AEE1F74F0150015849D /* NoteTableViewCell.swift in Sources */,
+				292982501F751378005231F6 /* MyViewController.swift in Sources */,
+				299B8AEA1F74EF6E0015849D /* NoteListViewController.swift in Sources */,
+				292982521F751628005231F6 /* AlertMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +306,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				INFOPLIST_FILE = TZ_IOS_DEV_/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pasha.TZ-IOS-DEV-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				INFOPLIST_FILE = TZ_IOS_DEV_/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pasha.TZ-IOS-DEV-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +349,7 @@
 				293CD5FC1F74E8F3001E91B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
